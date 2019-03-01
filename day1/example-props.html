@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <script type="text/babel">
+      function Badge (props) {
+        return (
+          <div>
+            <img src={props.img} />
+            <h1>Name: {props.name}</h1>
+            <h3>username: {props.username}</h3>
+          </div>
+        )
+      }
+
+      ReactDOM.render(
+        <Badge 
+          name='Tyler McGinnis'
+          username='tylermcginnis'
+          img='https://avatars0.githubusercontent.com/u/2933430?v=3&s=460'
+        />,
+        document.getElementById('app')
+      );
+    </script>
+  </head>
+  <body>
+      <div id='app'></div>
+  </body>
+</html>
